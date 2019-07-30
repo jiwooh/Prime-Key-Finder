@@ -3,12 +3,19 @@
 int main()
 {
   int i, k, a, b;
-  int minnum = -10;
-  int maxnum = 10;
+  int minnum;
+  int maxnum;
   float n;
+  int found = 0;
 
+  printf("Give the key of ");
   scanf("%d", &i);
   if (i<2) {return 0;}
+
+  printf("Search from where to where? (integer)\n");
+  scanf("%d", &minnum);
+  printf("to\n");
+  scanf("%d", &maxnum);
 
   for (k=minnum; k<=maxnum; k++)
   {
@@ -22,6 +29,7 @@ int main()
     {
       if (n>i/2) {n-=i;}
       printf("★ For k=%d, %d's key is %d :)", k, i, (int)n);
+      found=1;
       break;
     }
     else
@@ -29,6 +37,9 @@ int main()
       printf("\n");
     }
   }
-  
+  if (found!=1)
+  {
+    printf("None found in %d to %d :(", minnum, maxnum);
+  }
   return 0;
 }

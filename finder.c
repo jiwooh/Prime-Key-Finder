@@ -6,8 +6,10 @@ int main()
   int minnum = -10;
   int maxnum = 10;
   float n;
+
   scanf("%d", &i);
   if (i<2) {return 0;}
+
   for (k=minnum; k<=maxnum; k++)
   {
     a=i-k;
@@ -19,7 +21,7 @@ int main()
     if (n!=1 && n!=-1 && n/1.00 == (int)n)
     {
       if (n>i/2) {n-=i;}
-      printf("★ For k=%d, %d's key is %d!", k, i, (int)n);
+      printf("★ For k=%d, %d's key is %d :)", k, i, (int)n);
       break;
     }
     else

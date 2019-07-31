@@ -25,17 +25,17 @@ int main()
       
     printf("When k=%d, a=%d, b=%d, so n=%.3f\n", k, a, b, n);
       
-    if (n!=1 && n!=-1 && n/1.00 == (int)n)
+    if (n!=0 && n!=1 && n!=-1 && n/1.00 == (int)n)
     {
       if (n>i/2) {n-=i;}
-      printf("★ For k=%d, %d's key is %d :)", k, i, (int)n);
+      printf("\n★ For k=%d, %d's key is %d :)", k, i, (int)n);
       found=1;
       break;
     }
-    else
+    /* else
     {
       printf("\n");
-    }
+    } */
   }
   if (found!=1)
   {

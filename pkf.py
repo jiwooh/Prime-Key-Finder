@@ -18,9 +18,9 @@ for k in range(minnum, maxnum+1, 1):
     print('\n★ For k =', k, ',', p, '\'s key is', int(n), ':)')
     found = 1 
     break
-    sys.exit()
+    #sys.exit()
   #else:
     #print('\n')
 if (found!=1):
   print('None found in', minnum, 'to', maxnum, ':(')
-  sys.exit()
+  #sys.exit()

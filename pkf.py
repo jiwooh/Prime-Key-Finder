@@ -11,7 +11,9 @@ for k in range(minnum, maxnum+1, 1):
   a=p-k
   b=p-10*k
   n=round(a/b, 6)
-  print('When k =', k, ', a =', a, ', b =', b, ', so n =', n)
+  
+  #print('When k =', k, ', a =', a, ', b =', b, ', so n =', n)
+  # much faster calc = # above
 
   if (n!=0 and n!=1 and n!=-1 and n%1==0):
     if (n>p/2): n-=p
